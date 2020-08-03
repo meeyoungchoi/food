@@ -1,0 +1,29 @@
+{{>layouts/header}}
+<div class="jumbotron">
+    <h1>음식 조회</h1>
+</div>
+
+
+<!-- table -->
+<table class="table table-hover">
+    <tbody>
+    {{#foodVO}}
+        <tr>
+            <th>음식번호</th>
+            <td>{{id}}</td>
+        </tr>
+        <tr>
+            <th>음식이름</th>
+            <td>{{name}}</td>
+        </tr>
+        <tr>
+            <th>가격</th>
+            <td>{{price}}</td>
+        </tr>
+    {{/foodVO}}
+    </tbody>
+</table>
+
+
+
+

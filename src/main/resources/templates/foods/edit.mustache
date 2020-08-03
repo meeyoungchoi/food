@@ -1,0 +1,38 @@
+{{>layouts/header}}
+
+
+
+<div class="jumbotron">
+    <h1 class="display-4">음식 수정 페이지</h1>
+</div>
+
+
+
+
+{{#foodVO}}
+<form action="/food/update/{{id}}" method="post">
+    <div class="form-group">
+        <label for="exampleInputEmail1">이름</label>
+        <input type="text" class="form-control" name="name" value="{{name}}">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">가격</label>
+        <input type="number" class="form-control" name="price" value="{{price}}">
+    </div>
+    <button type="submit" class="btn btn-primary">재출</button>
+</form>
+{{/foodVO}}
+
+
+
+
+
+
+
+
+
+
+
+
+{{>layouts/footer}}
