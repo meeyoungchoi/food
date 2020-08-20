@@ -12,7 +12,7 @@ import javax.persistence.*;
 @NoArgsConstructor // 디폴트 생성자 자동 기입
 @AllArgsConstructor // 모든 필드 포함 생성자 자동 기입
 @Entity
-public class Comment {
+public class Comment extends  BaseTime{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
